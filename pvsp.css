@@ -1,0 +1,30 @@
+*{
+    font-family:Verdana;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.frame{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:75px;
+    width:270px;
+    height:270px;
+}
+
+.frame table {
+    border-collapse: collapse; 
+}
+
+
+.frame table tr td{
+    border:5px solid black;
+    border-collapse: collapse; 
+    height:90px;
+    font-size:55px;
+    font-weight:700;
+    text-align: center;
+    cursor:pointer;
+}

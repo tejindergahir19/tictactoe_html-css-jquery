@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Tic Tac Toe</title>
+    
+  </head>
+  <body>
+    <br>
+    <h1>TIC TAC TOE</h1>
+      <br><br><br>
+      <center>
+          <a href='pvsp.html'><img src='pvsp.png' width='135px'></a>
+      </center>
+      <br>
+    <center>
+        <a href='pvsc.html'><img src='pvsc.png' width='135px'></a>
+    </center>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+
+    $(document)[0].oncontextmenu = function() { return false; }
+
+    $(document).mousedown(function(e) {
+        if( e.button == 2 ) {
+            alert('Sorry, this functionality is disabled!');
+            return false;
+        } else {
+            return true;
+        }
+    });
+});
+
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 85 )) {
+                alert('Sorry, this functionality is disabled!');
+            return false;
+        }
+};
+    </script>
+    
+    
+  </body>
+</html>
